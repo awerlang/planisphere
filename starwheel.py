@@ -94,7 +94,7 @@ class StarWheel(BaseComponent):
         context.stroke(color=theme['edge'])
         context.clip()
 
-        for dec in arange(-80, 85, 15):
+        for dec in arange(-90, 90, 15):
             r = radius(dec=dec, latitude=latitude)
             if r > r_2:
                 continue
